@@ -3,19 +3,17 @@ import sys
 import os
 from sprites import Player, load_images
 from sounds import load_sounds, play_sound, stop_sound, play_music, stop_music
-from game_platform import Platform
+from game_platform import Platform  # Импортируем класс Platform
 
 # Инициализация Pygame
 pygame.init()
-pygame.mixer.init()
-
-debug_mode = True  # Включение отладочного режима
+pygame.mixer.init()  # Инициализация микшера для звуков
 
 # Размеры окна
 screen_info = pygame.display.Info()
 screen_width = screen_info.current_w
-screen_height = screen_info.current_h - 200
-screen = pygame.display.set_mode((screen_width, screen_height))
+screen_height = screen_info.current_h
+screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
 
 pygame.display.set_caption("Sound Integration")
 
@@ -27,12 +25,12 @@ sprite_dir = 'sprites'
 sound_dir = 'sounds'
 
 # Загрузка изображений спрайта и звуков, с изменением размера изображений
-scale_factor = 0.6
+scale_factor = 0.6  # Измените этот параметр на нужное значение
 animations = load_images(sprite_dir, scale_factor)
 sounds = load_sounds(sound_dir)
 
 # Воспроизведение фоновой музыки
-# play_music(os.path.join(sound_dir, 'background_music.mp3'))
+play_music(os.path.join(sound_dir, 'background_music.mp3'))
 
 # Создание игрока
 player = Player(animations, sounds, 100, screen_height - 100, screen_width, screen_height)
@@ -43,10 +41,8 @@ all_sprites.add(player)
 
 # Создание платформ
 platforms = pygame.sprite.Group()
-platform_image_path = 'img/platform.png'
-platform_width = 200
-platform_height = 50
-platforms.add(Platform(platform_image_path, 200, screen_height - platform_height, platform_width, platform_height))
+platform_image_path = 'img/platform.png'  # Замените на путь к вашему изображению платформы
+platforms.add(Platform(platform_image_path, 200, screen_height - 50, 300, 30))  # Пример платформы
 
 # Добавляем платформы в общую группу спрайтов для отрисовки
 all_sprites.add(platforms)
@@ -57,8 +53,9 @@ background_image = pygame.transform.scale(background_image, (screen_width, scree
 
 # Основной игровой цикл
 running = True
+velocity = 10
 while running:
-    dt = clock.tick(60) / 1000
+    dt = clock.tick(60) / 1000  # Время, прошедшее с последнего кадра (в секундах)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -68,22 +65,18 @@ while running:
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT] or keys[pygame.K_a]:
         player.move_left()
-        play_sound(sounds, 'walk')
+        play_sound(sounds, 'walk')  # Воспроизведение звука ходьбы
     elif keys[pygame.K_RIGHT] or keys[pygame.K_d]:
         player.move_right()
-        play_sound(sounds, 'walk')
+        play_sound(sounds, 'walk')  # Воспроизведение звука ходьбы
     else:
-        stop_sound(sounds, 'walk')
+        stop_sound(sounds, 'walk')  # Остановка звука ходьбы при отпускании клавиши
         if player.on_ground:
             player.change_animation(f"idle_idle_{player.direction}")
 
     if keys[pygame.K_UP] or keys[pygame.K_w] or keys[pygame.K_SPACE]:
         player.jump()
-        if player.on_ground:
-            play_sound(sounds, 'jump')
-    if keys[pygame.K_ESCAPE]:
-        pygame.quit()
-
+        play_sound(sounds, 'jump')  # Воспроизведение звука прыжка
 
     # Обновление игрока и платформ
     player.update(dt, platforms)
@@ -94,11 +87,6 @@ while running:
 
     # Отрисовка всех спрайтов
     all_sprites.draw(screen)
-
-    # Отрисовка границ прямоугольников в отладочном режиме
-    if debug_mode:
-        for sprite in all_sprites:
-            pygame.draw.rect(screen, (255, 0, 0), sprite.rect, 2)
 
     pygame.display.flip()
 
