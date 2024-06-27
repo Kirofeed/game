@@ -22,10 +22,6 @@ class Player(pygame.sprite.Sprite):
         self.animation_speed = 0.07
         self.animation_timer = 0
         self.direction = "right"
-        self.walk_speed = 5
-        self.sprint_multiplier = 1.7
-        self.normal_animation_speed = 0.07
-        self.sprint_animation_speed = 0.07 / 1.2
 
     def update(self, dt, platforms):
         # Обновление анимации
@@ -67,11 +63,8 @@ class Player(pygame.sprite.Sprite):
             self.rect.bottom = self.screen_height
             self.on_ground = True
 
-    def move_left(self, platforms, sprinting):
-        speed = self.walk_speed * self.sprint_multiplier if sprinting else self.walk_speed
-        self.rect.x -= speed
-        self.animation_speed = self.sprint_animation_speed if sprinting else self.normal_animation_speed
-
+    def move_left(self, platforms):
+        self.rect.x -= 5
         collisions = pygame.sprite.spritecollide(self, platforms, False)
         for platform in collisions:
             if self.rect.colliderect(platform.rect):
@@ -82,11 +75,8 @@ class Player(pygame.sprite.Sprite):
         else:
             self.change_animation("jump_jump_left")
 
-    def move_right(self, platforms, sprinting):
-        speed = self.walk_speed * self.sprint_multiplier if sprinting else self.walk_speed
-        self.rect.x += speed
-        self.animation_speed = self.sprint_animation_speed if sprinting else self.normal_animation_speed
-
+    def move_right(self, platforms):
+        self.rect.x += 5
         collisions = pygame.sprite.spritecollide(self, platforms, False)
         for platform in collisions:
             if self.rect.colliderect(platform.rect):
