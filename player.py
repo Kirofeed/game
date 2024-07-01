@@ -5,7 +5,7 @@ from sounds import play_sound
 class Player(pygame.sprite.Sprite):
     def __init__(self, animations, sounds, x, y, screen_width, screen_height, scale_factor):
         super().__init__()
-        self.animations = self.scale_animations(animations, scale_factor)
+        self.animations = animations
         self.sounds = sounds
         self.current_animation = "idle_right"
         self.images = self.animations[self.current_animation]
@@ -24,18 +24,11 @@ class Player(pygame.sprite.Sprite):
         self.direction = "right"
         self.walk_speed = 5
         self.sprint_multiplier = 1.7
-        self.jump_multiplier = 1.3  # Множитель высоты прыжка в спринте
+        self.jump_multiplier = 1.3
         self.normal_animation_speed = 0.14
-        self.sprint_animation_speed = self.normal_animation_speed / 2  # Уменьшение для увеличения скорости анимации
+        self.sprint_animation_speed = self.normal_animation_speed / 2
         self.is_walking = False
-
-    def scale_animations(self, animations, scale_factor):
-        scaled_animations = {}
-        for key, frames in animations.items():
-            scaled_frames = [pygame.transform.scale(frame,
-                            (int(frame.get_width() * scale_factor), int(frame.get_height() * scale_factor))) for frame in frames]
-            scaled_animations[key] = scaled_frames
-        return scaled_animations
+        self.sounds_on = True  # Добавим этот атрибут
 
     def update(self, dt, platforms):
         # Обновление анимации
@@ -119,7 +112,8 @@ class Player(pygame.sprite.Sprite):
             self.velocity.y = jump_power
             self.on_ground = False
             self.change_animation(f"jump_{self.direction}")
-            play_sound(self.sounds, 'jump')
+            if self.sounds_on:  # Проверка звукового флага
+                play_sound(self.sounds, 'jump')
 
     def change_animation(self, animation):
         if self.current_animation != animation:

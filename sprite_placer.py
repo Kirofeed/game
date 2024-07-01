@@ -34,6 +34,8 @@ class SpritePlacerApp:
         self.root.bind("<KeyPress-h>", self.show_highlight_sprites)  # Bind key press 'h'
         self.root.bind("<KeyRelease-h>", self.hide_highlight_sprites)  # Bind key release 'h'
         self.root.bind("<KeyPress>", self.key_press)  # Bind arrow keys to move sprite
+        self.root.bind("<Control-s>", self.save_sprites)  # Bind Ctrl+S to save sprites
+        self.root.bind("<BackSpace>", self.delete_selected_sprite)  # Bind Backspace to delete selected sprite
 
         self.selected_sprite_id = None  # Track the selected sprite's ID
         self.selected_sprite_outline = None  # Track the outline rectangle ID
@@ -292,10 +294,12 @@ class SpritePlacerApp:
             " - Arrow Keys: Move selected sprite\n"
             " - h: Highlight sprites by status (hold)\n"
             " - Esc: Deselect sprite\n"
+            " - Ctrl+S: Save\n"
+            " - Backspace: Delete selected sprite\n"
         )
         messagebox.showinfo("Help", help_text)
 
-    def delete_selected_sprite(self):
+    def delete_selected_sprite(self, event=None):
         if self.selected_sprite_id is not None:
             self.canvas.delete(self.selected_sprite_id)
             # Remove the selected sprite from the list
@@ -310,7 +314,7 @@ class SpritePlacerApp:
         else:
             print("No sprite selected.")
 
-    def save_sprites(self):
+    def save_sprites(self, event=None):
         file_path = filedialog.asksaveasfilename(defaultextension=".json", filetypes=[("JSON files", "*.json")])
         if not file_path:
             return

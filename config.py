@@ -40,4 +40,4 @@ score = 0
 font_size = 36
 font = pygame.font.Font(font_path, font_size)
 
-debug_mode = True  # Включаем режим отладки для отображения хитбоксов
+debug_mode = False  # Включаем режим отладки для отображения хитбоксов

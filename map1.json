@@ -1,0 +1,509 @@
+{
+    "placed_sprites": [
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 5,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 40,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 75,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 110,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 145,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 180,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 215,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "1_normal_grass.png",
+            "x": 250,
+            "y": 815,
+            "original_size": [
+                32,
+                16
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 210,
+            "y": 760,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 245,
+            "y": 760,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 280,
+            "y": 760,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 315,
+            "y": 760,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "small_ocen_mushroom.png",
+            "x": 290,
+            "y": 745,
+            "original_size": [
+                14,
+                15
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 350,
+            "y": 760,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 170,
+            "y": 690,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 135,
+            "y": 690,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 100,
+            "y": 690,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 65,
+            "y": 690,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 200,
+            "y": 625,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 305,
+            "y": 625,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 340,
+            "y": 625,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 485,
+            "y": 575,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 520,
+            "y": 575,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_normal_grass.png",
+            "x": 555,
+            "y": 575,
+            "original_size": [
+                32,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 425,
+            "y": 485,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 285,
+            "y": 460,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 635,
+            "y": 490,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 560,
+            "y": 390,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 525,
+            "y": 495,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 755,
+            "y": 595,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 485,
+            "y": 690,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 605,
+            "y": 585,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 705,
+            "y": 705,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 525,
+            "y": 720,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 675,
+            "y": 590,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 705,
+            "y": 540,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 775,
+            "y": 445,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 910,
+            "y": 570,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 940,
+            "y": 750,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 795,
+            "y": 515,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 840,
+            "y": 660,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 970,
+            "y": 410,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 1125,
+            "y": 585,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 830,
+            "y": 385,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 940,
+            "y": 465,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 1140,
+            "y": 405,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 785,
+            "y": 280,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 1020,
+            "y": 440,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 1015,
+            "y": 520,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        },
+        {
+            "sprite": "0_small_grass.png",
+            "x": 1005,
+            "y": 635,
+            "original_size": [
+                16,
+                9
+            ],
+            "active": true
+        }
+
+    ],
+    "canvas_size": {
+        "width": 1271,
+        "height": 841
+    }
+}

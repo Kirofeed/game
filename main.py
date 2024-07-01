@@ -18,6 +18,9 @@ clock = pygame.time.Clock()
 animations = load_images('sprites', scale_factor)
 sounds = load_sounds('sounds')
 
+music_on = True
+sounds_on = True
+
 play_music(os.path.join('sounds', 'background_music.mp3'))
 
 # Создание игрока
@@ -34,7 +37,7 @@ platforms_passive_group = pygame.sprite.Group()
 all_sprites.add(platforms)
 
 # Загрузка карты из json файла
-load_sprite_positions('map.json', platforms, screen_height, platforms_passive_group)
+load_sprite_positions('map1.json', platforms, screen_height, platforms_passive_group)
 all_sprites.add(platforms)
 all_sprites.add(platforms_passive_group)
 
@@ -55,10 +58,21 @@ while running:
                 menu_active = not menu_active
             elif event.key == pygame.K_q and menu_active:
                 running = False
+        elif event.type == pygame.MOUSEBUTTONDOWN and menu_active:
+            mouse_pos = event.pos
+            if music_box.collidepoint(mouse_pos):
+                music_on = not music_on
+                if music_on:
+                    play_music(os.path.join('sounds', 'background_music.mp3'))
+                else:
+                    stop_music()
+            elif sounds_box.collidepoint(mouse_pos):
+                sounds_on = not sounds_on
+                player.sounds_on = sounds_on  # Установка звукового флага в объекте игрока
 
     if menu_active:
         screen.fill((0, 0, 0))
-        draw_menu(screen)
+        music_box, sounds_box = draw_menu(screen, music_on, sounds_on)
         pygame.display.flip()
         continue
 
@@ -86,22 +100,24 @@ while running:
             player.jump(sprinting)
             stop_sound(sounds, 'walk')
             stop_sound(sounds, 'sprint')
-            play_sound(sounds, 'jump')
 
     if is_moving and player.on_ground:
         if sprinting:
             if not was_sprinting:
                 stop_sound(sounds, 'walk')
-                play_sound(sounds, 'sprint', -1)
+                if sounds_on:
+                    play_sound(sounds, 'sprint', -1)
                 was_sprinting = True
             was_walking = False
         else:
             if was_sprinting:
                 stop_sound(sounds, 'sprint')
-                play_sound(sounds, 'walk', -1)
+                if sounds_on:
+                    play_sound(sounds, 'walk', -1)
                 was_sprinting = False
             elif not was_walking:
-                play_sound(sounds, 'walk', -1)
+                if sounds_on:
+                    play_sound(sounds, 'walk', -1)
                 was_walking = True
         player.is_walking = True
     else:
