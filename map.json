@@ -3,7 +3,11 @@
         {
             "sprite": "giant.png",
             "x": 0,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -13,7 +17,11 @@
         {
             "sprite": "giant.png",
             "x": 50,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -23,7 +31,11 @@
         {
             "sprite": "giant.png",
             "x": 100,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -33,7 +45,11 @@
         {
             "sprite": "giant.png",
             "x": 150,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -43,7 +59,11 @@
         {
             "sprite": "giant.png",
             "x": 200,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -53,7 +73,11 @@
         {
             "sprite": "giant.png",
             "x": 250,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -63,7 +87,11 @@
         {
             "sprite": "giant.png",
             "x": 300,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -73,7 +101,11 @@
         {
             "sprite": "giant.png",
             "x": 350,
+<<<<<<< HEAD
             "y": 800,
+=======
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -82,8 +114,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 350,
             "y": 800,
+=======
+            "x": 400,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -92,8 +129,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 400,
             "y": 800,
+=======
+            "x": 450,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -102,8 +144,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 450,
             "y": 800,
+=======
+            "x": 500,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -112,8 +159,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 450,
             "y": 800,
+=======
+            "x": 550,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -122,8 +174,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 500,
             "y": 800,
+=======
+            "x": 600,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -132,8 +189,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 550,
             "y": 800,
+=======
+            "x": 650,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -142,8 +204,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 600,
             "y": 800,
+=======
+            "x": 700,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -152,8 +219,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 650,
             "y": 800,
+=======
+            "x": 750,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -162,8 +234,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 700,
             "y": 800,
+=======
+            "x": 800,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -172,8 +249,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 750,
             "y": 800,
+=======
+            "x": 850,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -182,8 +264,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 750,
             "y": 800,
+=======
+            "x": 900,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -192,8 +279,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 800,
             "y": 800,
+=======
+            "x": 950,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -202,8 +294,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 850,
             "y": 800,
+=======
+            "x": 1000,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -212,8 +309,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 850,
             "y": 800,
+=======
+            "x": 1050,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -222,8 +324,13 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 900,
             "y": 800,
+=======
+            "x": 1100,
+            "y": 700,
+>>>>>>> main
             "original_size": [
                 48,
                 48
@@ -232,6 +339,7 @@
         },
         {
             "sprite": "giant.png",
+<<<<<<< HEAD
             "x": 950,
             "y": 800,
             "original_size": [
@@ -517,12 +625,24 @@
             "original_size": [
                 48,
                 48
+=======
+            "x": 1150,
+            "y": 700,
+            "original_size": [
+                48,
+                48
+>>>>>>> main
             ],
             "active": true
         }
     ],
     "canvas_size": {
+<<<<<<< HEAD
         "width": 1261,
         "height": 841
+=======
+        "width": 1192,
+        "height": 750
+>>>>>>> main
     }
 }
